@@ -2,119 +2,128 @@
     <html lang="fr">
         <head>
             <meta charset="utf-8"/>
+            <link rel="stylesheet" href="style.css"/>
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet">
             <title>ohmyfood - Le délice des sens </title>
         </head>
         <body>
             <header>
-                <a href="accueil.html"><i class="fa-solid fa-arrow"></i></a>
+                <a href="index.html"><i class="fa-solid fa-arrow"></i></a>
                 <img src="images/logo/ohmyfood.png" alt="logo"/>
             </header>
 
             <div>
-                <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Le delice des sens" id="image"/>
+                <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Le delice des sens" class="image"/>
             </div> 
              
             <main id="menu">
                 <div id="intro">
-                    <h2>Le delice des sens</h2>
+                    <p class="police">Le delice des sens</p>
                     <i class="fa fa-heart"></i>
                 </div>
 
                 <!-- Partie entrées-->
-                <div id="entrées">
-                    <h2>Entrées</h2>
-                    <div id="entrées__1">
+                <section id="entrées">
+                    <h6 class="ligne">ENTRÉES</h6>
+                    <article id="entrées__1">
                         <div id="entrées__1__text">
                             <h3>Tartare de thon</h3>
                             <p>Assaisonné au yuzu</p>
                         </div>
-                        <p>25€</p>
-                    </div>
+                        <p> <strong>35€</strong> </p>
+                    </article>
 
-                    <div id="entrées__2">
+                    <article id="entrées__2">
                         <div id="entrées__2__text">
                             <h3>Bouchée de homard croustillant </h3>
                             <p>Et sa farandole de petits légumes </p>
                         </div>
-                        <p>35€</p>
-                    </div>
+                        <p> <strong>35€</strong> </p>
+                    </article>
 
-                    <div id="entrées__3">
+                    <article id="entrées__3">
                         <div id="entrées__3__text">
                             <h3>Velouté de cèpes </h3>
                             <p>Aux truffes</p>
                         </div>
-                        <p>20€</p>
-                    </div>
-                </div>
+                        <p> <strong>20€</strong> </p>
+                    </article>
+                </section>
 
                 <!-- Partie plats-->
-                <div id="plats">
-                    <h2>Plats</h2>
-                    <div id="plats__1">
+                <section id="plats">
+                    <h6 class="ligne">PLATS</h6>
+                    <article id="plats__1">
                         <div id="plats__1__text">
                             <h3>Poulet rôti aux herbes de Provence</h3>
                             <p>Et sa crème de truffe</p>
                         </div>
-                        <p>40€</p>
-                    </div>
+                        <p> <strong>40€</strong> </p>
+                    </article>
 
-                    <div id="plats__2">
+                    <article id="plats__2">
                         <div id="plats__2__text">
                             <h3>Langouste rôtie</h3>
                             <p>Et ses légumes de saison</p>
                         </div>
-                        <p>35€</p>
-                    </div>
+                        <p> <strong>35€</strong> </p>
+                    </article>
 
-                    <div id="plats__3">
+                    <article id="plats__3">
                         <div id="plats__3__text">
                             <h3>Côte de boeuf Angus </h3>
                             <p>Et sa purée de panais</p>
                         </div>
-                        <p>44€</p>
-                    </div>
-                </div>
+                        <p> <strong>44€</strong> </p>
+                    </article>
+                </section>
 
                 <!-- Partie desserts-->
-                <div id="desserts">
-                    <h2>desserts</h2>
-                    <div id="desserts__1">
+                <section id="desserts">
+                    <h6 class="ligne">DESSERTS</h6>
+                    <article id="desserts__1">
                         <div id="desserts__1__text">
-                            <h3>Farandole de desserts</h2>
+                            <h3>Farandole de desserts</h3>
                             <p>Du chef</p>
                         </div>
-                        <p>18€</p>
-                    </div>
+                        <p> <strong>18€</strong> </p>
+                    </article>
 
-                    <div id="desserts__2">
+                    <article id="desserts__2">
                         <div id="desserts__2__text">
-                            <h2>Crème brulée </h2>
+                            <h3>Crème brulée </h3>
                             <p>Revisitée</p>
                         </div>
-                        <p>22€</p>
-                    </div>
+                        <p> <strong>22€</strong> </p>
+                    </article>
 
-                    <div id="desserts__3">
+                    <article id="desserts__3">
                         <div id="desserts__3__text">
-                            <h2>Tiramisu</h2>
+                            <h3>Tiramisu</h3>
                             <p>À la noisette</p>
                         </div>
-                        <p>23€</p>
-                    </div>
+                        <p> <strong>23€</strong> </p>
+                    </article>
+                </section>
+                <div id="c">
+                <input type="submit" value="Commander" id="commande" />
                 </div>
-                <input type="submit" value="commander" id="commande" />
             </main>
 
             <footer>
-                <h2>ohmyfood</h2>
-                <ul>
-                    <li> <i class="fa fa-utensils"></i> Proposer un restaurant</li>
-                    <li> <i class="fa fa-handshake"></i> Devenir partenaire</li>
-                    <li>Mentions légales</li>
-                    <li>Contact</li>
-                </ul>
+                <div id="pied">
+                    <p id="omf">ohmyfood</p>
+                    <ul>
+                        <li> <i class="fa fa-utensils"></i><strong> Proposer un restaurant </strong></li>
+                        <li> <i class="fa fa-handshake"></i><strong> Devenir partenaire </strong></li>
+                        <li>Mentions légales</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
             </footer>
         </body>
     </html>
