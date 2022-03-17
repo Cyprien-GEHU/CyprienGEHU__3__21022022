@@ -6,6 +6,55 @@
 }
 
 /*partie Index*/
+#fond {
+  position: fixed;
+  background: #99E2D0;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: magic 500ms 3s;
+          animation: magic 500ms 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#bienvenu {
+  position: fixed;
+  width: 90%;
+  height: 3%;
+  margin-left: 15%;
+  margin-top: 50%;
+  font-size: 30px;
+  -webkit-animation: magic 500ms 3s;
+          animation: magic 500ms 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#loading {
+  position: fixed;
+  border: 3px solid #9356DC;
+  -webkit-box-shadow: 5px 5px 5px #9356DC;
+          box-shadow: 5px 5px 5px #9356DC;
+  width: 90%;
+  height: 3%;
+  margin-left: 5%;
+  margin-top: 60%;
+  -webkit-animation: magic 500ms 3s;
+          animation: magic 500ms 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#barre {
+  height: 100%;
+  -webkit-animation: charge 3s;
+          animation: charge 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -174,6 +223,8 @@ header {
   color: white;
   position: absolute;
   margin-right: 87%;
+  -webkit-animation: discret 3s;
+          animation: discret 3s;
 }
 
 #block3 {
@@ -254,6 +305,8 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   color: #008766;
+  -webkit-animation: discret 3s;
+          animation: discret 3s;
 }
 
 .coeur {
@@ -378,7 +431,7 @@ li {
   font-size: 26px;
 }
 
-#ajout {
+.ajout {
   background: #99E2D0;
   display: none;
 }
@@ -524,6 +577,55 @@ li {
 }
 
 /*Partie animation*/
+@-webkit-keyframes charge {
+  0% {
+    background: -webkit-gradient(linear, left top, right top, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(0.25turn, #FF79DA, #9356DC);
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  100% {
+    background: -webkit-gradient(linear, left top, right top, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(0.25turn, #FF79DA, #9356DC);
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+@keyframes charge {
+  0% {
+    background: -webkit-gradient(linear, left top, right top, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(0.25turn, #FF79DA, #9356DC);
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  100% {
+    background: -webkit-gradient(linear, left top, right top, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(0.25turn, #FF79DA, #9356DC);
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
+@-webkit-keyframes magic {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes magic {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
 @-webkit-keyframes apparition {
   0% {
     opacity: 0;
@@ -542,6 +644,7 @@ li {
             transform: translateY(0);
   }
 }
+
 @keyframes apparition {
   0% {
     opacity: 0;
@@ -650,6 +753,24 @@ li {
   }
   100% {
     width: 18%;
+  }
+}
+
+@-webkit-keyframes discret {
+  0% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+
+@keyframes discret {
+  0% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: hidden;
   }
 }
 /*# sourceMappingURL=style.css.map */
