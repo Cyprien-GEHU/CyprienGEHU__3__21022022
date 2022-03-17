@@ -34,8 +34,25 @@ header {
 }
 
 #logo {
-  height: 40px;
-  width: 200px;
+  max-width: 100%;
+  height: 25%;
+  width: 50%;
+  max-height: 100%;
+}
+
+#logo2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#logo3 {
+  max-width: 100%;
+  width: 75%;
+  max-height: 100%;
 }
 
 .icon {
@@ -221,7 +238,7 @@ header {
   font-size: 22px;
 }
 
-#new {
+#new1, #new2 {
   position: absolute;
   margin-top: -240px;
   margin-left: 70%;
@@ -229,7 +246,7 @@ header {
   width: 9%;
   padding: 1.5% 5%;
   border-radius: 5px;
-  background: #99e2d0;
+  background: #99E2D0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -274,6 +291,30 @@ li {
 }
 
 /*Partie Restaurant*/
+#tete {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2% 0;
+}
+
+.f {
+  font-size: 30px;
+}
+
+#f {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 10%;
+}
+
 #image1 {
   background: no-repeat url(images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
   padding-top: 55%;
@@ -379,6 +420,8 @@ li {
   font-size: 20px;
   width: 90%;
   padding: 3%;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 #entrées__1:hover #ajout, #entrées__2:hover #ajout, #entrées__3:hover #ajout, #entrées__4:hover #ajout, #plats__1:hover #ajout, #plats__2:hover #ajout, #plats__3:hover #ajout, #plats__4:hover #ajout, #desserts__1:hover #ajout, #desserts__2:hover #ajout, #desserts__3:hover #ajout, #desserts__4:hover #ajout {
@@ -422,6 +465,12 @@ li {
           animation: apparition 500ms 600ms;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
+}
+
+.text {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .chiffre2 {
