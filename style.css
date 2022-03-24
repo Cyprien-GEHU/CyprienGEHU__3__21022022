@@ -19,13 +19,18 @@
 
 #bienvenu {
   position: fixed;
-  width: 90%;
+  width: 100%;
   height: 3%;
-  margin-left: 15%;
-  margin-top: 50%;
-  font-size: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 490px;
+  font-size: 35px;
   -webkit-animation: magic 500ms 3s;
-          animation: magic 500ms 3s;
+  animation: magic 500ms 3s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -33,12 +38,12 @@
 #loading {
   position: fixed;
   border: 3px solid #9356DC;
-  -webkit-box-shadow: 5px 5px 5px #9356DC;
-          box-shadow: 5px 5px 5px #9356DC;
+  -webkit-box-shadow: 5px 5px 5px #9356dc;
+  box-shadow: 5px 5px 5px #9356dc;
   width: 90%;
   height: 3%;
   margin-left: 5%;
-  margin-top: 60%;
+  margin-top: 550px;
   -webkit-animation: magic 500ms 3s;
           animation: magic 500ms 3s;
   -webkit-animation-fill-mode: forwards;
@@ -286,7 +291,6 @@ header {
 
 #restaurant1__c__heart, #restaurant2__c__heart, #restaurant3__c__heart, #restaurant4__c__heart {
   margin-top: 1%;
-  font-size: 22px;
 }
 
 #new1, #new2 {
@@ -520,7 +524,7 @@ li {
           animation-fill-mode: both;
 }
 
-.text {
+.size1, .size2 {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -534,6 +538,7 @@ li {
       -ms-flex-align: end;
           align-items: flex-end;
   padding: 3%;
+  font-size: 18px;
 }
 
 #c {
