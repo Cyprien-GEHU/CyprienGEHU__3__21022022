@@ -74,7 +74,7 @@ h1 {
   margin: 0 0 30px 10%;
 }
 
-header {
+#contenu1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -89,8 +89,13 @@ header {
 
 #logo {
   max-width: 100%;
-  height: 25%;
   width: 50%;
+  max-height: 100%;
+}
+
+#logo3 {
+  max-width: 100%;
+  width: 75%;
   max-height: 100%;
 }
 
@@ -101,12 +106,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-#logo3 {
-  max-width: 100%;
-  width: 75%;
-  max-height: 100%;
+  width: 90%;
 }
 
 .icon {
@@ -142,7 +142,7 @@ header {
           align-items: center;
   background-color: #f6f6f6;
   font-size: 20px;
-  padding: 10% 7% 10% 7%;
+  padding: 10% 7%;
   text-align: center;
 }
 
@@ -151,7 +151,7 @@ header {
   padding: 25px 30px 25px 30px;
   border: hidden;
   border-radius: 60px;
-  margin-top: 30px;
+  margin-top: 5%;
   color: white;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
@@ -347,6 +347,10 @@ li {
   line-height: 35px;
 }
 
+#white {
+  color: white;
+}
+
 /*Partie Restaurant*/
 #tete {
   display: -webkit-box;
@@ -359,7 +363,7 @@ li {
 }
 
 .f {
-  font-size: 30px;
+  font-size: 40px;
 }
 
 #f {
@@ -474,7 +478,6 @@ li {
 }
 
 #entrées__1__text, #entrées__2__text, #entrées__3__text, #entrées__4__text, #plats__1__text, #plats__2__text, #plats__3__text, #plats__4__text, #desserts__1__text, #desserts__2__text, #desserts__3__text, #desserts__4__text {
-  font-size: 20px;
   width: 90%;
   padding: 3%;
   overflow: hidden;
