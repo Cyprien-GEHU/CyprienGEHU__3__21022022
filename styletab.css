@@ -84,6 +84,11 @@
   .coeur {
     font-size: 32px;
   }
+  .coeur2 {
+    font-size: 33px;
+    margin-left: -32px;
+    margin-top: 0;
+  }
   #image1, #image2, #image3, #image4 {
     padding-top: 50%;
   }

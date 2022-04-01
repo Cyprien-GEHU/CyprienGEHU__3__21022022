@@ -30,7 +30,7 @@
   margin-top: 490px;
   font-size: 35px;
   -webkit-animation: magic 500ms 3s;
-  animation: magic 500ms 3s;
+          animation: magic 500ms 3s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -290,7 +290,33 @@ h1 {
 }
 
 #restaurant1__c__heart, #restaurant2__c__heart, #restaurant3__c__heart, #restaurant4__c__heart {
+  font-size: 28px;
   margin-top: 1%;
+}
+
+#restaurant1__c__heart:hover .coeur, #restaurant2__c__heart:hover .coeur, #restaurant3__c__heart:hover .coeur, #restaurant4__c__heart:hover .coeur {
+  -webkit-animation: coeur 500ms;
+          animation: coeur 500ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#restaurant1__c__heart:hover .coeur2, #restaurant2__c__heart:hover .coeur2, #restaurant3__c__heart:hover .coeur2, #restaurant4__c__heart:hover .coeur2 {
+  -webkit-animation: coeur2 500ms;
+          animation: coeur2 500ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.coeur {
+  opacity: 0;
+}
+
+.coeur2 {
+  position: absolute;
+  color: grey;
+  margin-left: -28px;
+  margin-top: 3px;
 }
 
 #new1, #new2 {
@@ -311,18 +337,6 @@ h1 {
   color: #008766;
   -webkit-animation: discret 3s;
           animation: discret 3s;
-}
-
-.coeur {
-  font-size: 30px;
-}
-
-.coeur:hover {
-  color: black;
-  -webkit-animation: coeur 500ms;
-          animation: coeur 500ms;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
 }
 
 footer {
@@ -421,8 +435,22 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 30px;
+  font-size: 28px;
   padding: 3% 5%;
+}
+
+#intro__heart:hover .coeur {
+  -webkit-animation: coeur 500ms;
+          animation: coeur 500ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#intro__heart:hover .coeur2 {
+  -webkit-animation: coeur2 500ms;
+          animation: coeur2 500ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .police {
@@ -674,7 +702,7 @@ li {
 
 @-webkit-keyframes coeur {
   0% {
-    opacity: 1;
+    opacity: 0;
   }
   100% {
     background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
@@ -688,7 +716,7 @@ li {
 
 @keyframes coeur {
   0% {
-    opacity: 1;
+    opacity: 0;
   }
   100% {
     background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
@@ -697,6 +725,24 @@ li {
     -webkit-background-clip: text;
     color: transparent;
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes coeur2 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes coeur2 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
