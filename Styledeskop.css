@@ -1,11 +1,6 @@
-@media screen and (min-width: 800px) and (max-width: 1000px) {
+@charset "UTF-8";
+@media screen and (min-width: 1001px) {
   /*partie accueil*/
-  #logo {
-    width: 40%;
-  }
-  #logo3 {
-    width: 65%;
-  }
   #contenu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -19,17 +14,36 @@
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
+  #logo {
+    width: 35%;
+  }
+  #logo3 {
+    width: 50%;
+  }
+  #intro {
+    padding: 2% 3%;
+  }
   #restaurant1, #restaurant2, #restaurant3, #restaurant4 {
     width: 45%;
   }
+  #restaurant1__img, #restaurant2__img, #restaurant3__img, #restaurant4__img {
+    height: 325px;
+  }
+  .coeur {
+    margin-top: 0;
+  }
+  .coeur2 {
+    font-size: 40px;
+  }
   #new1, #new2 {
     position: absolute;
-    margin-top: -240px;
-    margin-left: 30%;
-    padding: 1.5% 2%;
+    margin-top: -315px;
+    margin-left: 33%;
+    padding: 1% 0.5%;
+    font-size: 24px;
   }
   .m_index {
-    font-size: 24px;
+    font-size: 30px;
     margin: 0 0 4% 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -71,25 +85,55 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    gap: 11%;
-    width: 19%;
+    gap: 10%;
+    width: 15%;
     height: 150px;
   }
-  .size1 {
+  .size1, .option {
+    font-size: 30px;
+  }
+  .size2, #lieu, li, #omf, .chiffre2 {
     font-size: 26px;
   }
-  .size2, .chiffre2 {
-    font-size: 24px;
+  .size3, .police, #button, .coeur {
+    font-size: 40px;
   }
-  .coeur {
-    font-size: 32px;
-    margin-top: 0;
+  #block1 {
+    padding: 8% 7%;
   }
-  .coeur2 {
-    font-size: 32px;
-  }
+  /*Partie menu*/
   #image1, #image2, #image3, #image4 {
-    padding-top: 50%;
+    padding-top: 45%;
+  }
+  #image2 {
+    background-position-y: -25%;
+  }
+  #entrées, #plats, #desserts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  #entrées__1, #plats__1, #desserts__1 {
+    margin-bottom: 3%;
+  }
+  .ligne {
+    margin-bottom: 1%;
+    font-size: 28px;
+    width: 58px;
+  }
+  #commande {
+    font-size: 40px;
+    padding: 2% 0;
+  }
+  #c {
+    padding: 5% 0 10% 0;
   }
   /*animation*/
   @-webkit-keyframes ajout {
@@ -97,7 +141,7 @@
       width: 0%;
     }
     100% {
-      width: 14%;
+      width: 10%;
     }
   }
   @keyframes ajout {
@@ -105,8 +149,8 @@
       width: 0%;
     }
     100% {
-      width: 14%;
+      width: 10%;
     }
   }
 }
-/*# sourceMappingURL=styletab.css.map */
+/*# sourceMappingURL=Styledeskop.css.map */

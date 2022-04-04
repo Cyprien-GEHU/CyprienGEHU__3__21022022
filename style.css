@@ -310,13 +310,12 @@ h1 {
 
 .coeur {
   opacity: 0;
+  position: absolute;
+  margin-top: 2px;
 }
 
 .coeur2 {
-  position: absolute;
   color: grey;
-  margin-left: -28px;
-  margin-top: 3px;
 }
 
 #new1, #new2 {
