@@ -554,6 +554,13 @@ li {
           animation-fill-mode: both;
 }
 
+#entrées__3, #plats__3, #desserts__3 {
+  -webkit-animation: apparition 500ms 800ms;
+          animation: apparition 500ms 800ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
 .size1, .size2 {
   overflow: hidden;
   white-space: nowrap;

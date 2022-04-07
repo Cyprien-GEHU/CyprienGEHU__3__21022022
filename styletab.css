@@ -88,8 +88,17 @@
   .coeur2 {
     font-size: 32px;
   }
+  /*Partie menu*/
   #image1, #image2, #image3, #image4 {
     padding-top: 50%;
+  }
+  .ligne {
+    margin-bottom: 1%;
+    font-size: 24px;
+    width: 54px;
+  }
+  .V {
+    font-size: 28px;
   }
   /*animation*/
   @-webkit-keyframes ajout {

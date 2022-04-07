@@ -135,13 +135,16 @@
   #c {
     padding: 5% 0 10% 0;
   }
+  .V {
+    font-size: 32px;
+  }
   /*animation*/
   @-webkit-keyframes ajout {
     from {
       width: 0%;
     }
     100% {
-      width: 10%;
+      width: 12%;
     }
   }
   @keyframes ajout {
@@ -149,7 +152,7 @@
       width: 0%;
     }
     100% {
-      width: 10%;
+      width: 12%;
     }
   }
 }
