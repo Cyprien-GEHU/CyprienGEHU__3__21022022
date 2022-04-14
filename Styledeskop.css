@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@media screen and (min-width: 1001px) {
+@media all and (min-device-width: 1048px) {
   /*partie accueil*/
   #contenu {
     display: -webkit-box;
@@ -92,7 +92,7 @@
   .size1, .option {
     font-size: 30px;
   }
-  .size2, #lieu, li, #omf, .chiffre2 {
+  .size2, #lieu, li, #omf, .chiffre2, .mise {
     font-size: 26px;
   }
   .size3, .police, #button, .coeur {
