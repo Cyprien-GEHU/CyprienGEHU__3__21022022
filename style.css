@@ -809,4 +809,19 @@ li {
     visibility: hidden;
   }
 }
+
+@media all and (min-device-width: 625px) {
+  #restaurant1__img, #restaurant2__img, #restaurant3__img, #restaurant4__img {
+    height: 325px;
+  }
+  .size1 {
+    font-size: 24px;
+  }
+  .size2 {
+    font-size: 22px;
+  }
+  #new1, #new2 {
+    margin-top: -315px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
